@@ -5,7 +5,8 @@ ID: admin, admin1
 
 PW: 0000(admin, admin1 동일)
 
-![Uploading Screenshot 2025-07-03 at 17.52.35.png…]()
+<img width="1624" alt="Screenshot 2025-07-03 at 17 52 35" src="https://github.com/user-attachments/assets/283bf700-ba0f-4d73-a751-58b7cac86c18" />
+
 
 
 ### 토론커뮤니티 리뉴얼
