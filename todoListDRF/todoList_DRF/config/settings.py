@@ -82,23 +82,6 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-'''
-DB_PATH = "/data/db.sqlite3" if os.environ.get("FLY_APP_NAME") else BASE_DIR / "db.sqlite3"
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": DB_PATH,
-    }
-}
-'''
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 # Password validation
@@ -162,9 +145,30 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication'
     ]
 }
-
+'''
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+'''
+DB_PATH = "/data/db.sqlite3" if os.environ.get("FLY_APP_NAME") else BASE_DIR / "db.sqlite3"
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": DB_PATH,
+    }
+}
+'''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+
+'''
+MEDIA_ROOT = "/data/media" if os.environ.get("FLY_APP_NAME") else BASE_DIR / "media"
+MEDIA_URL = "/media/"
 
 APP_NAME = os.environ.get("FLY_APP_NAME")
 
