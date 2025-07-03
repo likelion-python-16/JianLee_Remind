@@ -5,6 +5,7 @@ ID: admin, admin1
 
 PW: 0000(admin, admin1 동일)
 
+![Uploading Screenshot 2025-07-03 at 17.52.35.png…]()
 
 
 ### 토론커뮤니티 리뉴얼
